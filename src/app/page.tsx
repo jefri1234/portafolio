@@ -1,10 +1,9 @@
 'use client'
-
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Facebook, Instagram, Linkedin, Twitter, Menu, X, ChevronDown } from 'lucide-react'
+import { Menu, X, ChevronDown } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -121,7 +120,7 @@ export default function Home() {
             transition={{ delay: 0.4, duration: 0.5 }}
             className="text-xl text-gray-300 mb-8"
           >
-            Desarrollador Web Creativo y Productivo
+            Ingeniero Sotware Creativo y Productivo
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -160,7 +159,7 @@ export default function Home() {
                   también ofrecen una experiencia de usuario excepcional.
                 </p>
                 <blockquote className="text-xl italic text-blue-400 text-center border-l-4 border-blue-400 pl-4">
-                  "La innovación distingue a los líderes de los seguidores." - Steve Jobs
+                  La innovación distingue a los líderes de los seguidores. - Steve Jobs
                 </blockquote>
               </CardContent>
             </Card>
@@ -228,9 +227,11 @@ export default function Home() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <div className="flex items-center justify-center w-20 h-20 rounded-full  ">
-                  <img
+                  <Image
                     src={`/icons/${skill}.png`}
                     alt={skill}
+                    width={200}
+                    height={200}
                     className="w-15 h-15 object-contain"
                   />
                 </div>
